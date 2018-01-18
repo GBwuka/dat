@@ -1,0 +1,69 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>AIAC-DAT</title>
+        <!-- Bootstrap Core CSS -->
+        <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+        <!-- MetisMenu CSS -->
+        <link href="{% static 'css/metisMenu.min.css' %}" rel="stylesheet">
+        <!-- DataTables CSS -->
+        <link href="{% static 'css/dataTables.bootstrap.css' %}" rel="stylesheet">
+        <!-- DataTables Responsive CSS -->
+        <link href="{% static 'css/dataTables.responsive.css' %}" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="{% static 'css/sb-admin-2.css' %}" rel="stylesheet">
+        <!-- Custom Fonts -->
+        <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+        <link href="{% static 'css/bootstrap-select.min.css' %}" rel="stylesheet">
+
+                <!-- jQuery -->
+        <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+        <!-- Metis Menu Plugin JavaScript -->
+        <script src="{% static 'js/metisMenu.js' %}"></script>
+
+        <!-- DataTables JavaScript -->
+        <script src="{% static 'js/jquery.dataTables.js' %}"></script>
+        <script src="{% static 'js/dataTables.bootstrap.js' %}"></script>
+        <script src="{% static 'js/dataTables.responsive.js' %}"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script src="{% static 'js/sb-admin-2.js' %}"></script>
+        <script src="{% static 'js/bootstrap-select.js' %}"></script>
+        <script src="{% static 'js/dialog.js' %}"></script>
+      <!--   <script src="{% static 'js/i18n/defaults-*.min.js' %}"></script> -->
+    </head>
+    <body class="page-home" data-controller-name="home">
+        <div class="header">
+            <!-- Navigation -->
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header" id="navbar-header">
+                        <a class="navbar-brand" href="#"><font color="#0000DD"><b>AIAC-DAT</b></font></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="main-navbar-collapse">
+                        <div id="main-nav-menu">
+                            <!-- <ul class="nav navbar-nav">
+                                <li>
+                                    <a href="/aaa">图片分组</a>
+                                </li>
+                            </ul> -->
+                        </div>
+                        
+                    </div>
+                </div>
+            </nav>
+        </div>
+        {% block table_body %}{% endblock %}
+    </body>
+</html>
